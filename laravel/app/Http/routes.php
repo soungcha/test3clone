@@ -30,6 +30,7 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::group(['middleware' => ['web'],'namespace' =>"Main"], function () {
     Route::get('/', "SearchController@index");
-
+    Route::get('/linkedin2', "Linkedin_SearchController@index2");
+    Route::get('/linkedin', "Linkedin_SearchController@index");
 });
 
