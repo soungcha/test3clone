@@ -14,7 +14,6 @@ app.controller("ctrl1",function($scope,$http){
     }
     function getResultsPage(pageNumber){
         var _start = (pageNumber-1)*$scope.talentsPerPage;
-
         var _query = "*%3A*";
         var _key = $scope.keywords;
         if(_key)
